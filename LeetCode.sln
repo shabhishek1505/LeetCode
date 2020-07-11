@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteElementStack", "Delet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseStack", "ReverseStack\ReverseStack.csproj", "{8F427808-1357-49B4-A6BE-6315F949D906}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KthSymbolGrammar", "KthSymbolGrammer\KthSymbolGrammar.csproj", "{1BD8D6D2-63B7-420B-9ED0-806355A95BD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{8F427808-1357-49B4-A6BE-6315F949D906}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F427808-1357-49B4-A6BE-6315F949D906}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F427808-1357-49B4-A6BE-6315F949D906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD8D6D2-63B7-420B-9ED0-806355A95BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD8D6D2-63B7-420B-9ED0-806355A95BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD8D6D2-63B7-420B-9ED0-806355A95BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD8D6D2-63B7-420B-9ED0-806355A95BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +236,7 @@ Global
 		{50E92B45-8C14-4C8D-AED7-0F6362AD0CEE} = {A4020A77-0803-47FD-8E13-323B5052BAF4}
 		{E97520C4-E0AD-4A0D-9FA5-D09D92AA8D45} = {A4020A77-0803-47FD-8E13-323B5052BAF4}
 		{8F427808-1357-49B4-A6BE-6315F949D906} = {A4020A77-0803-47FD-8E13-323B5052BAF4}
+		{1BD8D6D2-63B7-420B-9ED0-806355A95BD5} = {A4020A77-0803-47FD-8E13-323B5052BAF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B03A9789-90F3-4FA6-964B-9CE978B70BA5}
