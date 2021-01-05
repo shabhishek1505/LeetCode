@@ -9,11 +9,11 @@ namespace SearchSuggestions
         static void Main(string[] args)
         {
 
-            var input = new List<string>() { "mobile", "mouse", "moneypot", "monitor", "mousepad" };
+            var input = new List<string>() { "bags", "baggage", "banner", "box", "cloths" };
 
             var data = CreateData(input);
 
-            var inp = "mon";
+            var inp = "bags";
 
 
             IList<IList<string>> outList = new List<IList<string>>();
@@ -32,11 +32,14 @@ namespace SearchSuggestions
 
         public static List<string> GetAllWOrds(Trie searchNode, List<string> outData)
         {
-            if (searchNode.IsWord)
-                outData.Add(searchNode.word);
-            foreach (var node in searchNode.nodes)
+            if (searchNode != null)
             {
-                GetAllWOrds(node, outData);
+                if (searchNode.IsWord)
+                    outData.Add(searchNode.word);
+                foreach (var node in searchNode.nodes)
+                {
+                    GetAllWOrds(node, outData);
+                }
             }
 
             return outData;
@@ -46,7 +49,7 @@ namespace SearchSuggestions
 
         public static Trie CreateData(List<string> list)
         {
-            Trie data = new Trie() { nodes = new List<Trie>() };
+            Trie data = new Trie() { nodes = new List<Trie>(),value = ' '};
             foreach (string word in list)
             {
                 data = Iterator(data, word, word);
@@ -60,7 +63,7 @@ namespace SearchSuggestions
             if (node.value == word.ToCharArray().FirstOrDefault() && word.Length == 1)
                 return node;
 
-            if (node.value == word.ToCharArray().FirstOrDefault())
+            if (node.value == word.ToCharArray().FirstOrDefault() || node.value==' ')
             {
                 foreach (var child in node.nodes)
                 {
@@ -84,7 +87,7 @@ namespace SearchSuggestions
                 return gr;
             }
             Iterator(gr, word, iteratingWord.Substring(1));
-            return gr;
+            return root;
 
         }
 
