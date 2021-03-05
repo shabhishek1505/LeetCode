@@ -30,7 +30,7 @@ namespace VariableSizeSlidingWindowSum
                     if (tempSum + arr[j] <= sum)
                         tempSum += arr[j];
                     else
-                    {
+                    {   
                         break;
                     }
                     if (tempSum == sum)
